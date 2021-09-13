@@ -42,7 +42,7 @@ public:
 		int n = s.size();
 		for (int i = 0; i < n; i++) {
 			if (map.count(s[i])) {//如果map中之前已经有这个了
-				res = (res > map.size()) ? res : map.size();
+				res = (res > map.size()) ? res : map.size(); // 这一行不用也行
 				i = map[s[i]];
 				map.clear();
 			}
